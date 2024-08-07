@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println(randw.Word())
+	fmt.Printf("rand: %v\n", randw.Select(5))
 }

@@ -19,3 +19,12 @@ func init() {
 func Word() string {
 	return Words[rand.Intn(len(Words))]
 }
+
+func Select(n int) []string {
+	perm := rand.Perm(len(Words))
+	s := []string{}
+	for i := 0; i < n; i++ {
+		s = append(s, Words[perm[i]])
+	}
+	return s
+}
